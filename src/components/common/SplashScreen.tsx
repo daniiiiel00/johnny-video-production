@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import logoImg from '../../assets/images/Logo/Logo.png';
 
 // The same ultra-bold icons from the testimonials UI
 const SPLASH_ICONS = [
@@ -87,7 +88,7 @@ export default function SplashScreen() {
             ></motion.div>
             
             <img 
-              src="/src/assets/images/Logo/Logo.png" 
+              src={logoImg} 
               alt="Johnny Video Production Logo" 
               className="w-48 md:w-64 relative z-10 drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]"
             />
