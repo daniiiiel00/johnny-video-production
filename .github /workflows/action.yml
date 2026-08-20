@@ -1,4 +1,4 @@
-name: Deploy React + TypeScript to cPanel via FTP
+name: Deploy React vite + TypeScript to cPanel via FTP
 
 on:
   push:
