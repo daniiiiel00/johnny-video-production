@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-bright: #FFD86B;
+  --color-gold-champagne: #F6E3A1;
+  --color-gold-antique: #9B6A20;
+  --color-bronze: #B77A2A;
+  
+  --color-black-cinema: #050505;
+  --color-black-rich: #0B0B0D;
+  --color-charcoal: #171719;
+  --color-brown-black: #1A120B;
+
+  --color-accent-burgundy: #681D2E;
+  --color-accent-plum: #45243F;
+  --color-accent-midnight: #111B35;
+  --color-accent-ivory: #FFF8EA;
+  --color-accent-cream: #F5E9D4;
+  --color-accent-amber: #FFB347;
+
+  --font-sans: 'Manrope', 'Inter', sans-serif;
+  --font-heading: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-black-cinema text-accent-ivory font-sans antialiased overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold to-gold-bright bg-clip-text text-transparent;
+  }
+  .bg-gradient-gold {
+    @apply bg-gradient-to-r from-gold to-gold-bright;
+  }
+  .glass {
+    @apply bg-black-rich/60 backdrop-blur-md border border-white/5;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
