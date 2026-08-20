@@ -16,7 +16,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <SplashScreen />
-      <div className="flex flex-col min-h-screen bg-black-cinema">
+      <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-black-cinema">
         <Navbar />
         <main className="flex-grow">
           <Routes>
