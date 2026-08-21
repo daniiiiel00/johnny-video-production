@@ -45,7 +45,7 @@ export function Marquee() {
         className="flex w-max gap-10 whitespace-nowrap font-heading text-4xl uppercase text-transparent [-webkit-text-stroke:1px_rgba(212,175,55,0.55)] md:text-6xl"
       >
         {Array.from({ length: 2 }).map((_, index) => (
-          <span key={index}>WEDDINGS • COMMERCIAL • FILM • EVENTS • MUSIC • STORYTELLING • CINEMA •</span>
+          <span key={index}>WEDDINGS • COMMERCIAL • BABYSHOWR • EVENTS • MUSIC • STORYTELLING • BIRTHDAY •</span>
         ))}
       </motion.div>
     </section>
